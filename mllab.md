@@ -15,7 +15,7 @@ We use the data from the previous exercise. we created a ready made dataset in t
 ## Create a Training Pipeline
 
 - Login to the ML Workspace on the left pane click designer as shown below by clicking "Designer Icon" followed by "New pipeline"
-  ![blank canvas image](images/gettingstarted.png)
+  ![blank canvas image](./images/gettingstarted.png)
 
 - A blank canvas as below will be open. you can replace the default pipeline name with your own name and as shown select the predefined compute target and the default data store for running this pipeline.
-  ![set compute and rename the pipeline](images/setcomputeandrenamepipeline.png)
+  ![set compute and rename the pipeline](./images/setcomputeandrenamepipeline.png)
