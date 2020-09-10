@@ -12,6 +12,10 @@ In this lab, you will learn how to Azure Machine Learning designer to feature en
 
 We use the data from the previous exercise. we created a ready made dataset in the Azure ML Workspace named *taxidata* to save some time for you. Let's use this to start Modeling.
 
+## Login to ML Workspace
+
+- Login to ml.azure.com. Choose your subscription and ML Workspace
+
 ## Create a Training Pipeline
 
 - Login to the ML Workspace on the left pane click designer as shown below by clicking "Designer Icon" followed by "New pipeline"
