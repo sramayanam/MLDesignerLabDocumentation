@@ -153,3 +153,54 @@ We use the data from the previous exercise. we created a ready made dataset in t
   ![publish](./images/publish.png)
 
   ---
+
+## Train the model using "AUTOML"
+
+- Let’s go to ml.azure.com. Once logged in, click on the AutoML and then click “New automated ML”.
+  
+  ---
+  ![AML1](./images/AutoMLnewrun.png)
+
+  ---
+
+- As a first step select the data set which is the same data set that we have been using previously which is the "taxi data".
+
+  ---
+  ![AML2](./images/SelectAMLDataSet.png)
+
+  ---
+
+- Let's configure the automated machine learning experiment. create a new experiment. Select the target column which is the tip amount and select the compute cluster on which this machine learning job runs. click **"Next"**. 
+
+  ---
+  ![AML3](./images/ConfigureAMLrun.png)
+
+  ---
+
+- Now let's choose the machine learning task type. In this case this is a regression problem. We need to predict a continuous measure and let's configure the settings for this regression. Press “view additional configuration settings” on the screen choose the primary metric of your choice. You can also block any algorithms that you think might not perform, in this case we chose KNN. Let's choose the time we allow for this job. In this exercise, lets chose half an hour. you can choose the number of concurrent runs on your compute cluster as well as other things such as validation – K fold cross validation or Auto. Let's not change any featurization settings and press save.
+
+  ---
+  ![AML4](./images/AMLTaskSettings.png)
+
+  ---
+
+- Now press finish to submit the machine learning run onto the compute. The system tries various algorithms and once the run is completed, we can go back and see all the models it tried and the results for each model
+
+  ---
+  ![AML5](./images/AMLSubmit.png)
+
+  ---
+
+- Let's go to the parent run and look at the best model it has chosen. Automated machine learning performs ensembling on various models that it thinks are performing well. Choose the final model which we could deploy. you can also view model explanation and other metrics. once you are satisfied we can go to the next step which is deployment.
+
+  ---
+  ![AML6](./images/AMLCheckRuns.png)
+
+  ---
+
+- Click the “Deploy” button. Provide the name for the deployment. choose the compute type - in this case I'm choosing Azure kubernetes cluster. Let us enable authentication and choose the key based authentication. You can also choose token-based authentication for OAUTH2 authentication scenarios. Press “Deploy”. The model will be deployed as a web service. This is a no code deployment and you can consume the web service once it is ready.
+  
+  ---
+  ![AML7](./images/AMLDeploy.png)
+
+  ---
