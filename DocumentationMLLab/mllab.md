@@ -14,7 +14,12 @@ We use the data from the previous exercise. we created a ready made dataset in t
 
 ## Login to ML Workspace
 
-- Login to [ML Workspace](ml.azure.com "Click to login"). Choose your subscription and ML Workspace
+- Login to [ML Workspace](https://ml.azure.com "Click to login"). Choose your subscription and ML Workspace
+
+  ---
+  ![LogintoAzureML](./images/LogintoAzureML.png)
+
+  ---
 
 ## Create a Training Pipeline
 
