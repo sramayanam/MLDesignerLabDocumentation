@@ -1,4 +1,4 @@
-# Azure ML Designer Lab
+# Azure ML Designer/AutoML Lab
 
 ## Background
 
